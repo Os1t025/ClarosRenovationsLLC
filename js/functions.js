@@ -1877,27 +1877,23 @@ jQuery($=> {
             disableFocusListener: false,
         }
     });
-  
 
-//    end of js
-
-$(document).ready(function(){
-    $("#gallery-slider").owlCarousel({
-        loop: true,            // Infinite loop
-        margin: 10,            // Space between images
-        nav: true,             // Show arrows
-        dots: false,           // Hide dots
-        autoplay: true,        // Auto-slide
-        autoplayTimeout: 2500, // Slide every 3 sec
-        autoplayHoverPause: true, // Pause on hover
-        navText: ["<", ">"],   // Custom arrow buttons
-        responsive: {
-            0: { items: 1 },   // 1 image on mobile
-            600: { items: 2 }, // 2 images on tablets
-            1000: { items: 4 } // 4 images on desktops
-        }
-    });
-});
-
+        $(document).ready(function(){
+            $("#gallery-slider").owlCarousel({
+                loop: true,           
+                margin: 10,            
+                nav: true,            
+                dots: false,          
+                autoplay: true,       
+                autoplayTimeout: 2500, 
+                autoplayHoverPause: true, 
+                navText: ["<", ">"],  
+                responsive: {
+                    0: { items: 1 },   
+                    600: { items: 2 }, 
+                    1000: { items: 4 } 
+                }
+            });
+        });
 });
 
